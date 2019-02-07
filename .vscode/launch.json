@@ -15,7 +15,7 @@
             "request": "launch",
             "name": "Launch Chrome",
             "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}\\public"
+            "webRoot": "${workspaceFolder}\\public.js"
         },
         {
             "type": "node",
