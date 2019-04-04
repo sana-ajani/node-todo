@@ -7,6 +7,9 @@ var database = require('./config/database'); 			// load the database config
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
+let appInsights = require("applicationinsights");
+appInsights.setup("dbe859ba-1e53-4461-b0ad-583b112d5497").setSendLiveMetrics(true)
+    .start();
 
 // configuration ===============================================================
 mongoose.connect(database.localUrl); 	// Connect to local MongoDB instance. A remoteUrl is also available (modulus.io)
